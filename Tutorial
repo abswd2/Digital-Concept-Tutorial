@@ -1,1 +1,19 @@
-This will serve as the tutorial for everything related to digital audio.
+Intro
+=====
+
+When dealing with digital audio it's important to start with the basics.  __*What is sound?*__  Sound is made up of vibrations that move through a transmission medium (gas, liquid, solid) as pressure changes.  We live in a wonderful time where sounds can be recorded by microphones (which convert pressure changes to an analog electrical system. Digital audio is an audio signal that has been recorded as a sequence of numbers. The sound wave of the audio signal is encoded as numerical samples in a continuous sequence.  That allows it to be transferred electronically and downloaded for us to listen to!  I'll be going over Sample Rate, Bit Depth, Audio Compression, and briefly over some Audio File Formats.
+
+
+Sample Rate and Bit Depth
+=========================
+
+Digital audio has a __sample rate__ (samples per second) and __bit depth__ (the number of bits used to represent a sample). The quality of the audio depends on both the sample rate and the bit depth. The bigger the bit depth and the higher the sample rate are, the better the file will sound.  The ability to notice a difference fades after a certain point, where the files then become unnecessarily larger. Things like phone calls use lower quality audio so they're able to transmit the audio faster.  The higher the sample rate and bigger the bit depth go, the more storage space an audio file takes up, and the slower it is to download.  Important in the field of digital signal processing is the Nyquist-Shannon sampling theorem, which is a fundamental bridge between continuous-time signals (often called “analog signals”) and discrete-time signals (often called “digital signals”). It establishes a sufficient condition for a sample rate that permits a discrete sequence of samples to capture all the information from a continuous-time signal of finite bandwidth. The sampling theorem introduces the concept of a sample rate that is sufficient for perfect fidelity for the class of functions that are bandlimited to a given bandwidth, such that no actual information is lost in the sampling process. It expresses the sufficient sample rate in terms of the bandwidth for the class of functions. The theorem also leads to a formula for perfectly reconstructing the original continuous-time function from the samples.
+
+
+Audio Compression and File Formats
+==================================
+
+Just like images (or any other type of file), compression can be used to reduce the size of the file or stream. And, as with images, compression can be __lossless__ or __lossy__. Lossy audio compression algorithms provide higher compression at the cost of fidelity and are used in numerous audio applications. These algorithms almost all rely on psychoacoustics to eliminate or reduce fidelity of less audible sounds, thereby reducing the space required to store or transmit them. Lossless audio compression produces a representation of digital data that decompress to an exact digital duplicate of the original audio stream, unlike playback from lossy compression techniques such as Vorbis and MP3. Compression ratios are around 50–60% of original size, which is similar to those for generic lossless data compression. Lossless compression is unable to attain high compression ratios due to the complexity of waveforms and the rapid changes in sound forms.In both lossy and lossless compression, information redundancy is reduced, using methods such as coding, pattern recognition, and linear prediction to reduce the amount of information used to represent the uncompressed data.  There are a lot of different ways files can be formatted, each specific to the type of compression. Things like WAV, AIFF, and AU are uncompressed.  Lossless file formats include FLAC, Monkey's Audio, and WavPack, among others.  Lastly, some lossy file formats Opus, Musepack, AAC, as well as the previously mentioned MP3 and Vorbis.
+
+
+There you have it!  Hopefully this has helped with your basic understanding of Digital audio, how it is formatted, what is consists of and what it is!
